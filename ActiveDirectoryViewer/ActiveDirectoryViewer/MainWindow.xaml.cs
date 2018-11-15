@@ -15,6 +15,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.DirectoryServices.AccountManagement;
 
+
+
 namespace ActiveDirectoryViewer
 {
     /// <summary>
@@ -36,14 +38,14 @@ namespace ActiveDirectoryViewer
             try
             {
 
-                PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "skogumdata.no");
+                PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "testdomene.local");
                 UserPrincipal principal = new UserPrincipal(ctx);
                 PrincipalSearcher searcher = new PrincipalSearcher(principal);
 
                 foreach (UserPrincipal result in searcher.FindAll())
                     if (result.SamAccountName == user)
                     {
-                        textblock.Text = result.DisplayName + "   " + result.SamAccountName;
+                        textblock.Text = result.DisplayName +"   "+ result.SamAccountName;
                     }
                         
 
@@ -62,8 +64,11 @@ namespace ActiveDirectoryViewer
             
         }
 
-        
-
+        private void Opprettbruker_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 win = new Window1();
+            win.Show();
+        }
     }
 
     

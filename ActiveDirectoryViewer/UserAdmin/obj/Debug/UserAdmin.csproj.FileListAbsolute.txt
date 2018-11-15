@@ -1,0 +1,6 @@
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\UserAdmin\bin\Debug\UserAdmin.dll
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\UserAdmin\bin\Debug\UserAdmin.pdb
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\UserAdmin\obj\Debug\UserAdmin.csprojAssemblyReference.cache
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\UserAdmin\obj\Debug\UserAdmin.csproj.CoreCompileInputs.cache
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\UserAdmin\obj\Debug\UserAdmin.dll
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\UserAdmin\obj\Debug\UserAdmin.pdb
