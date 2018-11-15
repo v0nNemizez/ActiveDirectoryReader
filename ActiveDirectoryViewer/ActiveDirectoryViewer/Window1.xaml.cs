@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.DirectoryServices;
+using System.DirectoryServices.AccountManagement;
 
 namespace ActiveDirectoryViewer
 {
@@ -27,24 +28,13 @@ namespace ActiveDirectoryViewer
         }
 
 
+
+
+        
+
     private void PopulateDropDown()
         {
-            string[] OU = null;
-
-            DirectoryEntry entry = new DirectoryEntry("LDAP://testdomene.local");
-            DirectorySearcher Searcher = new DirectorySearcher(entry);
-            Searcher.Filter = ("(objectClass=organizationalUnit)");
-            Searcher.SizeLimit = int.MaxValue;
-            Searcher.PageSize = int.MaxValue;
-
-            foreach (SearchResult each in Searcher.FindAll())
-            {
-                OU = each.GetDirectoryEntry();
-                comboboxOU.ItemsSource
-            }
-
-            Searcher.Dispose();
-            entry.Dispose();
+           
 
         }
     }
