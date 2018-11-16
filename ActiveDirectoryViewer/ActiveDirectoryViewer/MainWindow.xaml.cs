@@ -29,35 +29,16 @@ namespace ActiveDirectoryViewer
             InitializeComponent();
         }
 
-        string user = null;
+        
 
         private void Kjor_Click(object sender, RoutedEventArgs e)
         {
-            user = username.Text;
+            string u = username.Text;
+            User usr = new User(u);       
+        
+            textblock.Text = usr.Search();
 
-            try
-            {
-
-                PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "testdomene.local");
-                UserPrincipal principal = new UserPrincipal(ctx);
-                PrincipalSearcher searcher = new PrincipalSearcher(principal);
-
-                foreach (UserPrincipal result in searcher.FindAll())
-                    if (result.SamAccountName == user)
-                    {
-                        textblock.Text = result.DisplayName +"   "+ result.SamAccountName;
-                    }
-                        
-
-                searcher.Dispose();
-                       
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error:" + ex);
-            }
-
-           
+                
 
 
 
