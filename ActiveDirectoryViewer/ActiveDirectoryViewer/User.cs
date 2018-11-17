@@ -30,11 +30,23 @@ namespace ActiveDirectoryViewer
         }
 
 
-    private void Create()
+    private bool Create()
         {
+            PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "testdomene.local");
 
-
+             UserPrincipal usr = UserPrincipal.FindByIdentity(ctx, username);
+            if (usr != null)
+            {
                 
+                return false;
+            }
+
+            UserPrincipal userPrincipal = new UserPrincipal(ctx);
+            if (lastName != null && lastName.Length > 0)
+                userPrincipal.Surname = lastName;
+
+            return true;
+
         }
 
     public string Search()
