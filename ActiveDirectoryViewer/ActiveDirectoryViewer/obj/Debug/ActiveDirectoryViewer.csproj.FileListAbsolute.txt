@@ -30,3 +30,5 @@ C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\Act
 C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\ActiveDirectoryViewer.pdb
 C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Window1.g.cs
 C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Window1.baml
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Window2.g.cs
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Window2.baml

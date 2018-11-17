@@ -7,17 +7,17 @@ using System.DirectoryServices;
 using System.Windows;
 using System.DirectoryServices.AccountManagement;
 
-
 namespace ActiveDirectoryViewer
 {
-    public class User
+    public class User 
     {
         string username = null;
         string firstname = null;
         string lastname = null;
         string description = null;
+        
 
-     public User(string user, string fname, string lname)
+        public User(string user, string fname, string lname)
         {
             username = user;
             firstname = fname;
@@ -31,7 +31,7 @@ namespace ActiveDirectoryViewer
         }
 
 
-    public bool Create()
+    public bool CreateUser()
         {
             PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "testdomene.local", "OU=Users,OU=TEST,DC=testdomene,DC=local");
             
@@ -93,9 +93,11 @@ namespace ActiveDirectoryViewer
                     if (result.SamAccountName == username)
                     {
                         return result.DisplayName + "   " + result.SamAccountName;
+                        
                     }
                     else
                     {
+                        username = null;
                         return "Finner ikke bruker";
                     }
 
@@ -111,9 +113,6 @@ namespace ActiveDirectoryViewer
             return null;
         }
 
-    
-
-       
 
          
 

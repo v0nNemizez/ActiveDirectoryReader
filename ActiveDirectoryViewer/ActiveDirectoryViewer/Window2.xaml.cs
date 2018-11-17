@@ -11,30 +11,24 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.DirectoryServices;
-using System.DirectoryServices.AccountManagement;
 
 namespace ActiveDirectoryViewer
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
-            
-        }      
+        }
 
-   
-
-        private void createuser_OnClick(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            User usr = new User(username.Text, fname.Text, lname.Text);
-            if(usr.CreateUser() == true)
-            MessageBox.Show("Brukeren er opprettet");
-
+            Group grp = new Group(groupname.Text, desc.Text, scope.Text);
+            if (grp.CreateGroup() == true)
+                MessageBox.Show("Gruppen er opprettet");
         }
     }
 }

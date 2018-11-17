@@ -1,0 +1,16 @@
+﻿<Window x:Class="ActiveDirectoryViewer.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ActiveDirectoryViewer"
+        mc:Ignorable="d"
+        Title="Window2" Height="177.9" Width="184.887">
+    <Grid Margin="0,0,2,-12">
+        <TextBox Name="groupname" HorizontalAlignment="Left" Height="23" Margin="31,32,0,0" TextWrapping="Wrap" Text="Gruppenavn" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="desc" HorizontalAlignment="Left" Height="23" Margin="31,60,0,0" TextWrapping="Wrap" Text="Beskrivelse" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="scope" HorizontalAlignment="Left" Height="23" Margin="31,88,0,0" TextWrapping="Wrap" Text="Scope" VerticalAlignment="Top" Width="120" />
+        <Button Content="Opprett" HorizontalAlignment="Left" Margin="49,116,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>

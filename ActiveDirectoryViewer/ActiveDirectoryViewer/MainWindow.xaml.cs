@@ -36,9 +36,7 @@ namespace ActiveDirectoryViewer
             string u = username.Text;
             User usr = new User(u);       
         
-            textblock.Text = usr.Search();
-
-                
+            textblock.Text = usr.Search();         
 
 
 
@@ -48,6 +46,12 @@ namespace ActiveDirectoryViewer
         private void Opprettbruker_Click(object sender, RoutedEventArgs e)
         {
             Window1 win = new Window1();
+            win.Show();
+        }
+
+        private void Newgroup_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 win = new Window2();
             win.Show();
         }
     }
