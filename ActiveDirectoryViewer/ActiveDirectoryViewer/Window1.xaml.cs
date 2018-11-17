@@ -24,7 +24,7 @@ namespace ActiveDirectoryViewer
         public Window1()
         {
             InitializeComponent();
-            PopulateDropDown();
+            
         }
 
 
@@ -32,9 +32,13 @@ namespace ActiveDirectoryViewer
 
         
 
-    private void PopulateDropDown() 
+   
+
+        private void createuser_OnClick(object sender, RoutedEventArgs e)
         {
-            
+            User usr = new User(username.Text, fname.Text, lname.Text);
+            if(usr.Create() == true)
+            MessageBox.Show("Brukeren er opprettet");
 
         }
     }

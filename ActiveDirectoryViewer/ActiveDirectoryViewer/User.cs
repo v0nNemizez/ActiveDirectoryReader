@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.DirectoryServices;
+using System.Windows;
 using System.DirectoryServices.AccountManagement;
 
 
@@ -16,12 +17,12 @@ namespace ActiveDirectoryViewer
         string lastname = null;
         string description = null;
 
-     public User(string user, string fname, string lname, string des)
+     public User(string user, string fname, string lname)
         {
             username = user;
             firstname = fname;
             lastname = lname;
-            description = des;
+            
         }  
         
         public User (string user)
@@ -30,22 +31,52 @@ namespace ActiveDirectoryViewer
         }
 
 
-    private bool Create()
+    public bool Create()
         {
-            PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "testdomene.local");
+            PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "testdomene.local", "OU=Users,OU=TEST,DC=testdomene,DC=local");
+            
 
-             UserPrincipal usr = UserPrincipal.FindByIdentity(ctx, username);
+            UserPrincipal usr = UserPrincipal.FindByIdentity(ctx, username);
             if (usr != null)
             {
-                
+                MessageBox.Show("Brukernavn finnes allerede i domenet");
                 return false;
             }
 
             UserPrincipal userPrincipal = new UserPrincipal(ctx);
-            if (lastName != null && lastName.Length > 0)
-                userPrincipal.Surname = lastName;
+            if (lastname != null && lastname.Length > 0)
+                userPrincipal.Surname = lastname;
 
+            if (firstname != null && firstname.Length > 0)
+                userPrincipal.GivenName = firstname;
+
+            if (username != null && username.Length > 0)
+                userPrincipal.SamAccountName = username;
+
+            if (description != null && description.Length > 0)
+                userPrincipal.Description = username;
+
+            userPrincipal.DisplayName = firstname + lastname;
+
+            string pwd = "test1234";
+            userPrincipal.SetPassword(pwd);
+
+            userPrincipal.Enabled = false;
+            userPrincipal.ExpirePasswordNow();
+
+            try
+            {
+                userPrincipal.Save();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Kunne ikke lagre objektet." + e + "");
+                return false;
+            }
+
+            
             return true;
+            
 
         }
 
@@ -62,6 +93,10 @@ namespace ActiveDirectoryViewer
                     if (result.SamAccountName == username)
                     {
                         return result.DisplayName + "   " + result.SamAccountName;
+                    }
+                    else
+                    {
+                        return "Finner ikke bruker";
                     }
 
 

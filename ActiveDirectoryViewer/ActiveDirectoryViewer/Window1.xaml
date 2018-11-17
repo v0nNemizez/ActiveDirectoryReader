@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ActiveDirectoryViewer"
         mc:Ignorable="d"
-        Title="Window1" Height="370.71" Width="418.993">
-    <Grid>
-        <ComboBox Name="comboboxOU" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="391"/>
+        Title="Window1" Height="202.71" Width="353.993">
+    <Grid Margin="0,10,0,0">
+        <ComboBox Name="comboboxOU" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Width="303"/>
+        <TextBox Name="username" HorizontalAlignment="Left" Height="23" Margin="29,45,0,0" TextWrapping="Wrap" Text="Brukernavn" VerticalAlignment="Top" Width="303"/>
+        <TextBox Name="fname" HorizontalAlignment="Left" Height="23" Margin="29,73,0,0" TextWrapping="Wrap" Text="Fornavn" VerticalAlignment="Top" Width="303"/>
+        <TextBox Name="lname" HorizontalAlignment="Left" Height="23" Margin="29,101,0,0" TextWrapping="Wrap" Text="Etternavn" VerticalAlignment="Top" Width="303"/>
+        <Button Name="createuser" Content="Opprett bruker" HorizontalAlignment="Left" Margin="242,129,0,0" VerticalAlignment="Top" Width="90" Click="createuser_OnClick"/>
 
     </Grid>
 </Window>
