@@ -46,7 +46,7 @@ namespace ActiveDirectoryViewer
 
             grp.SamAccountName = "g-" + Groupname;
 
-            grp.GroupScope = (System.DirectoryServices.AccountManagement.GroupScope)Enum.Parse(typeof(System.DirectoryServices.AccountManagement.GroupScope), GroupScope);
+            grp.GroupScope = (System.DirectoryServices.AccountManagement.GroupScope)Enum.Parse(typeof(GroupScope), GroupScope);
 
             try
             {

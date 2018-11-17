@@ -28,7 +28,12 @@ C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\Act
 C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\ActiveDirectoryViewer.csproj.CoreCompileInputs.cache
 C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\ActiveDirectoryViewer.exe
 C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\ActiveDirectoryViewer.pdb
-C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Window1.g.cs
-C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Window1.baml
-C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Window2.g.cs
-C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Window2.baml
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\bin\Debug\ActiveDirectoryViewer.exe.manifest
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\bin\Debug\ActiveDirectoryViewer.application
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Windows\Window1.g.cs
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Windows\Window2.g.cs
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Windows\Window1.baml
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\Windows\Window2.baml
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\ActiveDirectoryViewer.TrustInfo.xml
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\ActiveDirectoryViewer.exe.manifest
+C:\Users\skogum\Documents\GitHub\ActiveDirectoryReader\ActiveDirectoryViewer\ActiveDirectoryViewer\obj\Debug\ActiveDirectoryViewer.application
